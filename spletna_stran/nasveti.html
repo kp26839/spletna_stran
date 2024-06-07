@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="stilprova.css">
+		<title>PC MATCH</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Kratek opis vsebine">
+		<meta name="keywords" content="Html, Css ...">
+		<meta name="author" content="Perne Kerin">
+	</head>
+	<body>
+		<div class="ozadje">
+		<header>
+			<img class="logo" src="slike/logotip.png" alt="logotip" style="float:right;width:100px;height:auto;">
+			<h1>PC MATCH</h1>
+			<style>
+				/* Inline styles for the button */
+				#myBtn {
+					display: none;
+					position: fixed;
+					bottom: 20px;
+					right: 30px;
+					z-index: 99;
+					font-size: 18px;
+					border: none;
+					outline: none;
+					background-color: #1F65B5;
+					color: white;
+					cursor: pointer;
+					padding: 15px;
+					border-radius: 10px;
+					transition: background-color 0.3s;
+				}
+				#myBtn:hover {
+					background-color: #02074F;
+				}
+			</style>
+		</header>
+
+        <nav>
+        <ul class="nav">
+            <li class="navi">
+                <div class="dropdown">
+                    <button class="dropbtn">HOME</button>
+                    <div class="dropdown-content">
+                        <a href="index.html#1">CPE-CENTRALNA PROCESNA ENOTA</a>
+                        <a href="index.html#2">MATIČNA PLOŠČA</a>
+                        <a href="index.html#3">RAM</a>
+                        <a href="index.html#4">GRAFIČNA KARTICA</a>
+                        <a href="index.html#5">POWER SUPPLY/NAPAJALNIK</a>
+                        <a href="index.html#6">SSD ALI HARD DISK/TRDI DISK</a>
+						<a href="index.html#7">HLADILNI VENTILATOR-COOLER</a>
+                        <a href="index.html#8">OHIŠJE</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navi"><a class="page" href="CPU.html">CPE</a></li>
+            <li class="navi"><a class="page" href="maticna.html">MATIČNA PLOŠČA</a></li>
+            <li class="navi"><a class="page" href="graficna.html">GRAFIČNA KARTICA</a></li>
+            <li class="navi">
+                <div class="dropdown">
+                    <button class="dropbtn">NAVODILA</button>
+                    <div class="dropdown-content">
+                        <a href="navodila.html#11">PRVI KORAK</a>
+                        <a href="navodila.html#22">DRUGI KORAK</a>
+                        <a href="navodila.html#33">TRETJI KORAK</a>
+                        <a href="navodila.html#44">ČETRTI KORAK</a>
+                        <a href="navodila.html#55">PETI KORAK</a>
+                        <a href="navodila.html#66">ŠESTI KORAK</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navi"><a class="page" href="nasveti.html">NASVETI IN PRIMERI</a></li>
+        </ul>
+    </nav>
+		<section>
+			<h3>PRIMERI SESTAVNIH DELOV</h3>
+			<table class="posebej">
+				<tr class="cpe">
+					<th>CPE</th>
+					<th>MATIČNA PLOŠČA</th>
+					<th>RAM</th>
+					<th>GRAFIČNA KARTICA</th>
+					<th>POWER SUPPLY</th>
+					<th>COOLER</th>
+					<th>SSD ali HHD</th>
+					<th>OHIŠJE VELIKOST</th>
+					<th>KOMENTARJI</th>
+
+				</tr>
+				<tr>
+					<td>AMD Ryzen 9 5900X</td>
+					<td>ASUS Rogue B550-A gaming</td>
+					<td>DDR4-3200MHz, Patriot Memory Viper elite 2</td>
+					<td>NVIDIA GeForce RTX 4070</td>
+					<td>850 Watt</td>
+					<td>Zračni hladilnik, Deep cool AK400</td>
+					<td>1 TB HHD</td>
+					<td>Full tower</td>
+					<td>Računalnik s temi sestavnimi deli je zelo primeren za gaiming še posebej za igre, ki potrebujejo močno grafiko (Cyberpunk 2077, Red Dead Redemption 2...).</td>
+
+				</tr>
+				<tr>
+					<td>Intel Core i7 12700KF Unlocked (5 GHz)</td>
+					<td>ASUS Prime B760-Plus</td>
+					<td>Corsaire Venge Ance DDR5-5200 (2x16GB)</td>
+					<td>NVIDIA GeForce RTX 3050 8GB</td>
+					<td>650 Watt</td>
+					<td>Zračni hladilnik, Master Hyper H412R</td>
+					<td>1 TB HHD or 1 TB SSD</td>
+					<td>Full tower ali Mid tower</td>
+					<td>Računalnik je primeren za dijaka ali študenta računalništva, ki programira, lahko je uporabljen tudi za kakšne videoigrice, ki ne zahtevajo preveliko grafike.</td>
+
+				</tr>
+				<tr>
+					<td>AMD Ryzen 5 5500</td>
+					<td>GIGABYTE A520M 52H mini-ATX</td>
+					<td>Corsair Vengence DDR4-3200(2x16GB)</td>
+					<td>NVIDIA GeForce RTX 3060 12GB</td>
+					<td>550 Watt</td>
+					<td>hladilnik priložen s CPE</td>
+					<td>1 TB HHD</td>
+					<td>Full tower ali širok Mid tower</td>
+					<td>Računalnik je zelo primeren za nekoga, ki se ukvarja z marketingom ali desainerskimi zadevami ali pa študira animacijo.</td>
+
+				</tr>
+				<tr>
+					<td>Intel Core i5 11400F (4.4 GHz)</td>
+					<td>ASUS Prime H510M-K </td>
+					<td>Patriot Viper Steel DDR4-3200 (2x8GB)</td>
+					<td>NVIDIA GeForce RTX 3050 6GB</td>
+					<td>550 Watt</td>
+					<td>Hladilnik priložen s CPE</td>
+					<td>1 TB HHD or SSD</td>
+					<td>Mini ali Mid tower</td>
+					<td>Računalnik primeren za srednješolce, še posebej za tiste, ki v prostem času radi igrajo kakšno igrico npr. Dark Souls, Elden Ring, Call of Duty...</td>
+
+				</tr>
+				<tr>
+					<td>AMD Ryzen 3 3100 (3.9 GHz)</td>
+					<td>GIGABYTE B450M, micro ATX</td>
+					<td>Gigastone desktop RAM DDR4-2666 (2x8GB)</td>
+					<td>AMD HD7670</td>
+					<td>350 Watt</td>
+					<td>hladilnik priložen s CPE</td>
+					<td>500 GB HHD ali SSD</td>
+					<td>Mini tower</td>
+					<td>Računalnik s temi sestavnimi deli je zelo primeren za gaiming še posebej za igre, ki potrebujejo močno grafiko (Cyberpunk 2077, Red Dead Redemption 2...).</td>
+
+				</tr>
+			</table>
+			<h4>NASVETI</h4>
+			<img class="foto1" src="slike/komplet.jpg" alt="Foto di Andrey Matveev: https://www.pexels.com/it-it/foto/luci-tecnologia-computer-interni-17576302/">
+			<p>Pri nakupu računalnika moramo biti zelo pozorni, zakaj točno ga bomo uporabljali. <br>
+			Če si študent/ka ali dijak/inja računalništva, je pomembno preveriti hitrost procesorja oziroma najmanjča hitrost mora biti 3.0 GHz. <br>
+			Če pa študiraš ekonomijo ali designersko, se ti splača preveriti, da računalnik ali prenosnik ima dovolj močno grafiko.<br>
+			Za gamerja je pa seveda odvisno od vrste iger, ki jih igra, v vsakem primeru mora imeti dober procesor, kot za programiranje.<br>
+			Ze pa rabiš računalnik samo za uporabiti office, pa se posveti temu, da najdeš računalnik z dovolj RAM prostora.</p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+		</section>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">GOR</button>
+
+        <script>
+
+            let mybutton = document.getElementById("myBtn");
+
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+			<!--coda javascript privzeta iz w3schools.com-->
+        </script>
+	<footer>
+        <p>spletna stran © 2024 by author is licensed under CC BY 4.0. Vse pravice pridržane.</p>
+    </footer>
+	</div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+body{
+	margin-bottom: 0px;
+	margin-right: 0px;
+	margin-left: 0px;
+	text-align: left;
+	background-color: #B0EBFF;
+}
+
+h1{
+	font-family: "lucida console";
+	color: blue;
+	border-style: double;
+	border-color: blu;
+	border-width: medium;
+	padding: 50px;
+	margin: 0;
+}
+img{
+	overflow: right;
+}
+
+h4{
+	font-family: Monospace;
+	color: #1F65B5;
+	font-size: 20px;
+}
+
+.navi{
+  display: inline;
+}
+
+.navi {
+  float: left;
+}
+ 
+.page {
+  display: block;
+  padding: 8px;
+  background-color: #1F65B5;
+}
+
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #1F65B5;
+}
+
+.navi {
+  float: left;
+}
+
+.navi a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: monospace;
+  font-size: 15px;
+}
+
+li a:hover {
+  background-color: #02074F;
+}
+
+
+table {
+  width: 100%;
+}
+
+th {
+  height: 70px;
+  text-align: center;
+}
+th, td {
+  border-bottom: 1px solid black;
+}
+tr:hover {background-color: white;}
+
+tr{
+	text-align: left;
+}
+
+.cpe{
+	background-color: #02457A;
+	color: white;
+}
+li{
+	font-family: "Lucida console";
+	font-size: 25px;
+	color: #001b48;
+}
+p{
+	font-family: monospace;
+	font-size: 18px;
+}
+.logo{
+	width:200px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+}

@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    margin-bottom: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    text-align: left;
+    background-color: #B0EBFF;
+    font-family: Arial, sans-serif;
+}
+
+/* Headings */
+h1 {
+    font-family: "Lucida Console", monospace;
+    color: blue;
+    border-style: double;
+    border-color: blue; /* Corrected color spelling */
+    border-width: medium;
+    padding: 50px;
+    margin: 0;
+}
+
+/* Image Styles */
+img {
+    float: right; /* Corrected from overflow to float */
+    margin: 20px;
+    border: none;
+    background: none;
+}
+
+/* Smaller Headings */
+h4 {
+    font-family: Monospace;
+    color: #1F65B5;
+    font-size: 20px;
+}
+
+/* Navigation Styles */
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1F65B5;
+    display: flex;
+    justify-content: center;
+}
+
+.navi {
+    display: inline-block;
+}
+
+.navi a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.navi a:hover {
+    background-color: #02074F;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse; /* Added to remove spacing between cells */
+}
+
+th {
+    height: 70px;
+    text-align: center;
+}
+
+th, td {
+    border-bottom: 1px solid black;
+    padding: 10px; /* Added padding for better readability */
+}
+
+tr:hover {
+    background-color: #f2f2f2; /* Changed color for better visibility */
+}
+
+tr {
+    text-align: left;
+}
+
+/* Class Styles */
+.cpe {
+    background-color: #02457A;
+    color: white;
+}
+
+/* List Styles */
+li {
+    font-family: "Lucida Console", monospace;
+    font-size: 25px;
+    color: #001B48;
+}
+
+/* Paragraph Styles */
+p {
+    font-family: monospace;
+    font-size: 18px;
+}
+.logo{
+	width:200px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	z-index: -1;
+}

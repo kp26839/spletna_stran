@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="stilprova.css">
+		<title>PC MATCH</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Kratek opis vsebine">
+		<meta name="keywords" content="Html, Css ...">
+		<meta name="author" content="Perne Kerin">
+	</head>
+	<body>
+		<div class="ozadje">
+		<header>
+			<img class="logo" src="slike/logotip.png" alt="logotip" style="float:right;width:100px;height:auto;">
+			<h1>PC MATCH</h1>
+			<style>
+				/* Inline styles for the button */
+				#myBtn {
+					display: none;
+					position: fixed;
+					bottom: 20px;
+					right: 30px;
+					z-index: 99;
+					font-size: 18px;
+					border: none;
+					outline: none;
+					background-color: #1F65B5;
+					color: white;
+					cursor: pointer;
+					padding: 15px;
+					border-radius: 10px;
+					transition: background-color 0.3s;
+				}
+				#myBtn:hover {
+					background-color: #02074F;
+				}
+				<!--coda javascript privzeta iz w3schools.com-->
+			</style>
+		</header>
+
+        <nav>
+        <ul class="nav">
+            <li class="navi">
+                <div class="dropdown">
+                    <button class="dropbtn">HOME</button>
+                    <div class="dropdown-content">
+                        <a href="index.html#1">CPE-CENTRALNA PROCESNA ENOTA</a>
+                        <a href="index.html#2">MATIČNA PLOŠČA</a>
+                        <a href="index.html#3">RAM</a>
+                        <a href="index.html#4">GRAFIČNA KARTICA</a>
+                        <a href="index.html#5">POWER SUPPLY/NAPAJALNIK</a>
+                        <a href="index.html#6">SSD ALI HARD DISK/TRDI DISK</a>
+						<a href="index.html#7">HLADILNI VENTILATOR-COOLER</a>
+                        <a href="index.html#8">OHIŠJE</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navi"><a class="page" href="CPU.html">CPE</a></li>
+            <li class="navi"><a class="page" href="maticna.html">MATIČNA PLOŠČA</a></li>
+            <li class="navi"><a class="page" href="graficna.html">GRAFIČNA KARTICA</a></li>
+            <li class="navi">
+                <div class="dropdown">
+                    <button class="dropbtn">NAVODILA</button>
+                    <div class="dropdown-content">
+                        <a href="navodila.html#11">PRVI KORAK</a>
+                        <a href="navodila.html#22">DRUGI KORAK</a>
+                        <a href="navodila.html#33">TRETJI KORAK</a>
+                        <a href="navodila.html#44">ČETRTI KORAK</a>
+                        <a href="navodila.html#55">PETI KORAK</a>
+                        <a href="navodila.html#66">ŠESTI KORAK</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navi"><a class="page" href="nasveti.html">NASVETI IN PRIMERI</a></li>
+        </ul>
+    </nav>
+		<section>
+			<h3>CPE in njena kompatibilnost</h3>
+			<img class="ryzen" src="slike/ryzen.jpg" alt="CPE Ryzen © 2024 by Perne Kerin is licensed under Creative Commons Attribution 4.0 International">
+			<p>Na trgu imamo dve močni multinacjonalki procesorjev, oziroma <b>Intel</b> in <b>AMD</b>. 
+			Vsak processo ne more biti povezen s katerim kolim delom računalnika, oziroma vsak ima svojo specifično povezanost. 
+			Pri nakupovanju procesorja rabimo biti pazljivi na katero matično ploščo kupimo. Pomembno je gledati ali ima ta pravi <b>CHIPSET</b> in ali ima ta prav <b>SOCKET</b>. 
+			Pomembno je tudi, da je <b>BIOS</b>  posodobljen če uporabljamo npr. matično ploščo serie 600 z 14najsto generacijo.
+			Moramo gledati tudi kater cooler vzeti, saj nočem, da nam procesor pregori in uniči tudi ostale dele. Pozorni moramo biti, da cooler ima ta pravi <b>SOCKET</b> in da je dovolj močan za hlajenje.
+			Spodaj imamo tabeli z splošnimi podatki, katere moramo upoštevati pri nabavi samega procesorja in ostalih delov.</p>
+		</section>
+	<table>
+		<tr class="cpe">
+			<th>CPE Intel</th>
+			<th>CHIPSET</th>
+			<th>SOCKET</th>
+			<th>RAM</th>
+
+		</tr>
+		<tr>
+			<td>Intel 14th generation<br>
+			Raptor Lake</td>
+			<td>700 series and 600 series</td>
+			<td>LGA 1700</td>
+			<td>DDR5 do 5600</td>
+
+		</tr>
+		<tr>
+			<td>Intel 13th generation<br>
+			Raptor Lake</td>
+			<td>Z790,<br>
+			B760,<br>
+			H770,
+			H710</td>
+			<td>LGA 1700</td>
+			<td>DDR5 do 5600</td>
+
+		</tr>
+		<tr>
+			<td>Intel 12th generation<br>
+			Alder Lake</td>
+			<td>Z690,
+			B660,<br>
+			H610,
+			Z790,<br>
+			B760,
+			H770,<br>
+			H710</td>
+			<td>LGA 1700</td>
+			<td>DDR5 do 4300,<br>
+			DDR4 do 3200</td>
+
+		</tr>
+		<tr>
+			<td>Intel 11th generation<br>
+			Rocket Lake</td>
+			<td>Z590,<br>
+			B560,
+			H510</td>
+			<td>LGA 1200</td>
+			<td>DDR4 do 3200</td>
+
+		</tr>
+		<tr>
+			<td>Intel 10th generation,<br>
+			Comet Lake</td>
+			<td>Z490,<br>
+			H470,<br>
+			B460,<br>
+			H410</td>
+			<td>LGA 1200</td>
+			<td>DDR4 do 2666</td>
+
+		</tr>
+	</table>
+	
+	
+	<table>
+		<tr class="cpe">
+			<th>CPE Ryzen</th>
+			<th>CHIPSET</th>
+			<th>SOCKET</th>
+			<th>RAM</th>
+
+		</tr>
+		<tr>
+			<td>Zen 4,<br>
+			serie 7000</td>
+			<td>X670E, <br>
+			X670, <br>
+			B650E, <br>
+			B650</td>
+			<td>Socket AM5</td>
+			<td>DDR5 do 5200</td>
+
+		</tr>
+		<tr>
+			<td>Zen 3, <br>
+			serie 6000, 5000</td>
+			<td>B450,<br>
+			X470,<br>
+			B550,<br>
+			X570</td>
+			<td>Socket AM4</td>
+			<td>DDR5 do 3200</td>
+
+		</tr>
+		<tr>
+			<td>Zen 2, <br>
+			serie 4000, 3000</td>
+			<td>B450,<br>
+			X470,<br>
+			B550,<br>
+			X570</td>
+			<td>Socket AM4</td>
+			<td>DDR4 do 3200</td>
+
+		</tr>
+	</table>
+	<button onclick="topFunction()" id="myBtn" title="Go to top">GOR</button>
+
+        <script>
+
+            let mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+			<!--coda javascript privzeta iz w3schools.com-->
+        </script>
+    <footer>
+        <p>spletna stran © 2024 by author is licensed under CC BY 4.0. Vse pravice pridržane.</p>
+    </footer>
+	</div>
+</body>
+</html>

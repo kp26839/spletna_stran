@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="stilprova.css">
+		<title>PC MATCH</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Kratek opis vsebine">
+		<meta name="keywords" content="Html, Css ...">
+		<meta name="author" content="Perne Kerin">
+	</head>
+	<body>
+		<div class="ozadje">
+		<header>
+			<img class="logo" src="slike/logotip.png" alt="logotip" style="float:right;width:100px;height:auto;">
+			<h1>PC MATCH</h1>
+			<style>
+				/* Inline styles for the button */
+				#myBtn {
+					display: none;
+					position: fixed;
+					bottom: 20px;
+					right: 30px;
+					z-index: 99;
+					font-size: 18px;
+					border: none;
+					outline: none;
+					background-color: #1F65B5;
+					color: white;
+					cursor: pointer;
+					padding: 15px;
+					border-radius: 10px;
+					transition: background-color 0.3s;
+				}
+				#myBtn:hover {
+					background-color: #02074F;
+				}
+				<!--coda javascript privzeta iz w3schools.com-->
+			</style>
+		</header>
+		
+        <nav>
+        <ul class="nav">
+            <li class="navi">
+                <div class="dropdown">
+                    <button class="dropbtn">HOME</button>
+                    <div class="dropdown-content">
+                        <a href="index.html#1">CPE-CENTRALNA PROCESNA ENOTA</a>
+                        <a href="index.html#2">MATIČNA PLOŠČA</a>
+                        <a href="index.html#3">RAM</a>
+                        <a href="index.html#4">GRAFIČNA KARTICA</a>
+                        <a href="index.html#5">POWER SUPPLY/NAPAJALNIK</a>
+                        <a href="index.html#6">SSD ALI HARD DISK/TRDI DISK</a>
+						<a href="index.html#7">HLADILNI VENTILATOR-COOLER</a>
+                        <a href="index.html#8">OHIŠJE</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navi"><a class="page" href="CPU.html">CPE</a></li>
+            <li class="navi"><a class="page" href="maticna.html">MATIČNA PLOŠČA</a></li>
+            <li class="navi"><a class="page" href="graficna.html">GRAFIČNA KARTICA</a></li>
+            <li class="navi">
+                <div class="dropdown">
+                    <button class="dropbtn">NAVODILA</button>
+                    <div class="dropdown-content">
+                        <a href="navodila.html#11">PRVI KORAK</a>
+                        <a href="navodila.html#22">DRUGI KORAK</a>
+                        <a href="navodila.html#33">TRETJI KORAK</a>
+                        <a href="navodila.html#44">ČETRTI KORAK</a>
+                        <a href="navodila.html#55">PETI KORAK</a>
+                        <a href="navodila.html#66">ŠESTI KORAK</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navi"><a class="page" href="nasveti.html">NASVETI IN PRIMERI</a></li>
+        </ul>
+    </nav>
+		<section>
+			<h3>GRAFIČNA KARTICA</h3>
+			<p>Povezljivost grafične kartice (ali GPU) je ključni vidik pri sestavljanju ali nadgradnji računalnika. 
+			Grafična kartica mora biti združljiva z matično ploščo in zagotavljati potrebne povezave za monitor in druge naprave. 
+			Tukaj je pregled različnih vidikov povezljivosti grafične kartice.</p>
+			<h4>TEHNIČNE LASTNOSTI</h4>
+			<img class="gpu" src="slike/grafic.jpg" alt="Foto di Andrey Matveev: https://www.pexels.com/it-it/foto/ventilatore-rotondo-in-bianco-e-nero-6341789/">
+			<ol type="1">
+				<li>Vmesnik z Matično Ploščo:</li>
+				<p>PCIe Reža (PCI Express): Sodobne grafične kartice uporabljajo režo PCIe x16 za povezavo z matično ploščo. Najnovejše različice so PCIe 4.0 in PCIe 3.0, prihaja pa tudi PCIe 5.0.
+				Združljivost: Matične plošče s PCIe 4.0 so združljive nazaj s PCIe 3.0 grafičnimi karticami in obratno, vendar z omejeno hitrostjo na nižjo različico.</p>
+				
+				<li>Priključki za Napajanje:</li>
+				<p>Grafične kartice višjega razreda zahtevajo dodatne priključke za napajanje s strani napajalnika (PSU).
+				Pogosti tipi: PCIe priključki s 6-pini, 8-pini (6+2), in včasih 12-pini pri najvišjih modelih.
+				Opomba: Vedno preveri energijske potrebe grafične kartice in se prepričaj, da ima tvoj PSU potrebne priključke in zadostno moč (vatažo).</p>
+
+				<li>Priključki za Prikaz:</li>
+				<p>HDMI (High-Definition Multimedia Interface): Podpira tako video kot avdio preko enega kabla. Najnovejše različice (HDMI 2.1) podpirajo višje ločljivosti in višje frekvence osveževanja.
+				DisplayPort: Pogosto prednost za monitorje z visoko ločljivostjo in frekvenco osveževanja. DisplayPort 1.4 in 2.0 podpirata ločljivosti do 8K.
+				DVI (Digital Visual Interface): Še vedno se uporablja pri starejših monitorjih.</p>
+			</ol>
+			<br>
+			<h3>PRIMERI GRAFIČNIH KARTIC</h3>
+				<p>Najbolj znana proizvajalca grafičnih kartic sta NVIDIA in AMD, katera proizvajata GPU čipe. Seveda grafične kartice so se sestavljene tudi iz AIB (Add in board). 
+				Proizvajalci AIB kupijo GPU čipe in izdelajo tiskano vezje, hladilni sistem in VRB (Voltage Regulator Modules).</p>
+			
+			<h3>SEZNAM NVIDIA GRAFIČNIH KARTIC</h3>
+			 <ol type="a">
+				<li><b>GeForce GTX 16 Series (Turing, 2019)</b></li>
+				<p> Primeri: GTX 1660 Ti, GTX 1650, GTX 1660 </p>
+				<li><b>GeForce RTX 20 Series (Turing, 2018-2019)</b></li>
+				<p>Primeri: RTX 2080 Ti, RTX 2080, RTX 2060, RTX 2070</p>
+				<li><b>GeForce RTX 30 Series (Ampere, 2020-2022)</b></li>
+				<p>Primeri: RTX 3090 Ti, RTX 3090, RTX 3800 Ti, RTX 3800, RTX 3600, itd.</p>
+				<li><b>GeForce RTX 40 Series (Ada Lovelace, 2022-2024)</b></li>
+				<p>Primeri: RTX 4900, RTX 4800, RTX 4700, RTX 4600, RTX 4500...</p>
+			</ol>
+			
+			<h3>SEZNAM AMD GRAFIČNIH KARTIC</h3>
+			<ol type="a">
+				<li><b>Radeon RX 5000 Series (RDNA 1, 2019)</b></li>
+				<p>Primeri: RX 5700, RX 5600, RX 5500...</p>
+				<li><b>Radeon RX 6000 Series (RDNA 2, 2020-2022)</b></li>
+				<p>Primeri: RX 6800, RX 6700, RX 6600, RX 6500, RX 6400...</p>
+				<li><b>Radeon RX 7000 Series (RDNA 3, 2022-2024)</b></li>
+				<p>Primeri: RX 7900 XTX, RX 7800, RX 7700, RX 7600, RX 7500...</p>
+			</ol>
+
+			
+			
+		</section>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">GOR</button>
+
+        <script>
+
+            let mybutton = document.getElementById("myBtn");
+
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+			<!--coda javascript privzeta iz w3schools.com-->
+        </script>
+	<footer>
+        <p>spletna stran © 2024 by author is licensed under CC BY 4.0. Vse pravice pridržane.</p>
+    </footer>
+	</div>
+</body>
+</html>

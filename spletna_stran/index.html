@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <link rel="stylesheet" href="stilprova.css">
+    <title>PC MATCH</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Kratek opis vsebine">
+    <meta name="keywords" content="Html, Css ...">
+    <meta name="author" content="Perne Kerin">
+    <style>
+        /* Inline styles for the button */
+        #myBtn {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #1F65B5;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+        }
+        #myBtn:hover {
+            background-color: #02074F;
+        }
+		<!--coda javascript privzeta iz w3schools.com-->
+    </style>
+</head>
+<body>
+	<div class="ozadje">
+    <header>
+        <img class="logo" src="slike/logotip.png" alt="logotip" style="float:right;width:100px;height:auto;">
+        <h1>PC MATCH</h1>
+    </header>
+
+    <nav>
+        <ul class="nav">
+            <li class="navi">
+                <div class="dropdown">
+                    <button class="dropbtn">HOME</button>
+                    <div class="dropdown-content">
+                        <a href="index.html#1">CPE-CENTRALNA PROCESNA ENOTA</a>
+                        <a href="index.html#2">MATIČNA PLOŠČA</a>
+                        <a href="index.html#3">RAM</a>
+                        <a href="index.html#4">GRAFIČNA KARTICA</a>
+                        <a href="index.html#5">POWER SUPPLY/NAPAJALNIK</a>
+                        <a href="index.html#6">SSD ALI HARD DISK/TRDI DISK</a>
+						<a href="index.html#7">HLADILNI VENTILATOR-COOLER</a>
+                        <a href="index.html#8">OHIŠJE</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navi"><a class="page" href="CPU.html">CPE</a></li>
+            <li class="navi"><a class="page" href="maticna.html">MATIČNA PLOŠČA</a></li>
+            <li class="navi"><a class="page" href="graficna.html">GRAFIČNA KARTICA</a></li>
+            <li class="navi">
+                <div class="dropdown">
+                    <button class="dropbtn">NAVODILA</button>
+                    <div class="dropdown-content">
+                        <a href="navodila.html#11">PRVI KORAK</a>
+                        <a href="navodila.html#22">DRUGI KORAK</a>
+                        <a href="navodila.html#33">TRETJI KORAK</a>
+                        <a href="navodila.html#44">ČETRTI KORAK</a>
+                        <a href="navodila.html#55">PETI KORAK</a>
+                        <a href="navodila.html#66">ŠESTI KORAK</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navi"><a class="page" href="nasveti.html">NASVETI IN PRIMERI</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h3>KAJ JE RAČUNALNIK?</h3>
+        <p>Računalnik je elektronska naprava, ki lahko izvaja različne operacije obdelave podatkov, kot so shranjevanje, pridobivanje in obdelava podatkov. 
+		Sestavljen je iz strojne opreme (hardware) in programske opreme (software). Glavne komponente vključujejo centralno procesno enoto (CPU), pomnilnik (RAM), matično ploščo, 
+		grafično kartico (GPU), trdi disk ali SSD, napajalnik (PSU), ohišje in hladilni sistem. Računalniki se uporabljajo za naloge, kot so obdelava besedil, brskanje po internetu, 
+		igranje iger, urejanje fotografij in videoposnetkov ter programiranje. So ključni del vsakdanjega življenja in različnih industrij.</p>
+		<img class="foto2" src="slike/racunalnik.png" alt="Človeško telo vs pc © 2024 by Perne Kerin is licensed under Creative Commons Attribution 4.0 International">
+        <h3>KOMPONENTI RAČUNALNIKA:</h3>
+        <ul id="index">
+            <li><a href="#1">CPE-CENTRALNA PROCESNA ENOTA</a></li>
+            <li><a href="#2">MATIČNA PLOŠČA</a></li>
+            <li><a href="#3">RAM</a></li>
+            <li><a href="#4">GRAFIČNA KARTICA</a></li>
+            <li><a href="#5">POWER SUPPLY/NAPAJALNIK</a></li>
+            <li><a href="#6">SSD ALI HARD DISK/TRDI DISK</a></li>
+            <li><a href="#7">HLADILNI VENTILATOR-COOLER</a></li>
+            <li><a href="#8">OHIŠJE</a></li>
+        </ul>
+
+        <h4 id="1">CPE-CENTRALNA PROCESNA ENOTA</h4>
+			<img class="foto1" src="slike/cpu.jpg" alt="Foto di Pok Rie: https://www.pexels.com/it-it/foto/foto-chiusa-dell-unita-di-elaborazione-centrale-dell-nera-1432680/">
+			<p>Centralna procesna enota ali splošno tudi poimenovana samo kot procesor, je obdelovalna enota samega računalnika. 
+			Ta krmili, nadzoruje, uskljauje in izvaja osnovne operacije (aritmetične, logične, primerjalne), na zelo podoben naščin deluje kot človeški možgani.
+			Cpu (Central proces unit) je sestavljen iz: <br>
+			<ul>
+			<li>krmilne enote: ta nadzoruje, organizira prenos podatkov in analizira ukaze za njihovo pravilno izvajanje;</li>
+			<li>registri: so hitre pomnilniške celice, nad katerimi ALU izvaja operacije, znotraj teh najdemo akumulator in programski števec.</li>
+			<li>ALU-Aritmetično logična enota (unit), izvaja osnovne operacije; aritmetične, logične, primerjalne.</li>
+			</ul>
+			Na današnjem trgu imamo 2 zelo močni multinacjonalki, ki sta priznani po kakovostnih mikroprocesorjih, to sta Intel in AMD. </p>
+			
+			<h5>INTEL IN AMD</h5>
+			
+			<p>Prvi mikroprocesor je bil Intel 4004, ki ga je seveda leta 1971 naredila Intel (Integrated Electronics Corporation).
+			Leta 1991 se prebije skozi monopolje mikroprocesorjev tudi AMD (Advanced Mikro device), ki je isto kot Intel začela prvo z izdelavo pomnilnikov.
+			</p>
+			<br>
+			<br>
+			<br>
+			<h4 id="2">MATIČNA PLOŠČA</h4>
+			<img class="foto2" src="slike/mb.jpg" alt="Foto di Miguel Á. Padriñán: https://www.pexels.com/it-it/foto/foto-in-scala-di-grigi-della-scheda-madre-3520694/">
+			<p>Matična plošča je glavna plošča v računalniku, ki povezuje vse njegove dele. Na njo so priključeni procesor, pomnilnik, trdi diski, grafična kartica in druge naprave.
+			Omogoča, da te komponente med seboj komunicirajo in delujejo skupaj. Vsebuje tudi osnovno programsko opremo imenovana BIOS, ki pomaga pri zagonu računalnika.</p>
+			<br>
+			<br>
+			<h4 id="3">RAM</h4>
+			<img class="foto1" src="slike/rams.jpg" alt="Foto di Valentine Tanasovich: https://www.pexels.com/it-it/foto/scheda-madre-del-computer-nero-e-grigio-2588757/">
+			<p> RAM oziroma pomnilnik, hrani programe, ukaze, vhodno, vmesne in kočne rezultate. Pomninik je linearno zaporedje celic. 
+			Seveda v računalniku imamo dva tipa pomnilnika to sta: RAM in ROM. ROM je bralni pomnilnik, ki se nahaja že na sami matišni plošči,
+			medtem ko RAM (Random Acess Memory) je bralno pisalni pomnilnik, ki se ga kupi posebej. 
+			Na ta računalnik naloži program in nato vanj med delom vpisuje podatke in jih bere.    </p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h4 id="4">GRAFIČNA KARTICA</h4>
+			<img class="foto2" src="slike/gpu2.jpg" alt="Foto di Nana  Dua: https://www.pexels.com/it-it/foto/hardware-scheda-grafica-nvidia-gpu-8622911/">
+			<p>Grafična kartica je komponenta v računalniku, ki skrbi za prikazovanje slik in videa na zaslonu. Ima svoj procesor, imenovan GPU (grafični procesor), in lastni pomnilnik, 
+			kar ji omogoča hitro obdelavo grafičnih podatkov. Grafične kartice so ključne za igranje iger, gledanje filmov v visoki ločljivosti in delo z grafičnimi programi. 
+			Lahko so integrirane v matično ploščo ali pa kot ločene kartice, ki jih je mogoče nadgraditi.</p>
+			
+			<h4 id="5">POWER SUPPLY/NAPAJALNIK</h4>
+			<img class="foto1" src="slike/power.jpg" alt="power © 2024 by author is licensed under CC BY 4.0 ">
+			<p>Napajalnik služi za priključitev računalnika na električno energijo. 
+			Pretvarja vhodno napetost v različne napetostne nivoje, vključno z 12V, in preko napetostnih vodnikov napaja vse komponente računalnika. 
+			Znotraj sebe vsebuje ventilator saj se ta segreva med svojim delovanjem.</p>
+			<br>
+			<br>
+			<br>
+			<br>
+			<h4 id="6">SSD ALI HARD DISK/TRDI DISK</h4>
+			<img class="foto2" src="slike/ssd.png" alt="ssd">
+			<p>SSD (solid-state drive) in trdi disk (HDD - hard disk drive) sta vrsti pomnilniških naprav, ki se uporabljata za shranjevanje podatkov v računalniku.
+			V sodobnih računalnikih se pogosto uporabljata obe vrsti pomnilniških naprav: SSD za operacijski sistem in programe, ki zahtevajo hitrejši dostop do podatkov,
+			ter HDD za shranjevanje večjih količin podatkov, kjer hitrost ni tako kritična.</p>
+			
+			<h5>SSD</h5>
+			
+			<p>SSD-ji uporabljajo flash pomnilnik za shranjevanje podatkov, kar pomeni, da nimajo premikajočih se delov zato so bolj odporni na fizične poškodbe. 
+			Ta je bistveno hitrejši pri branju in pisanju podatkov v primerjavi s trdim diskom, kar pomeni hitrejši zagon računalnika in aplikacij.</p>
+			
+			<h5>HARD DISK</h5>
+			
+			<p>HDD-ji uporabljajo magnetne plošče, ki se vrtijo, in bralne/pisalne glave za dostop do podatkov. Ker tej imajo premikajoče dele so tudi bolj občetljivi na fizične poškodbe.
+			Trdi diski običajno ponujajo več prostora za shranjevanje ampak so tudi zelo počasni v primerjavi s SSD-jem.</p>
+			
+			
+			<h4 id="7">HLADILNI VENTILATOR-COOLER</h4>
+			<img class="foto3" src="slike/cooler.jpg" alt="cooler"> 
+			<p>Cooler (hladilnik) je naprava v računalniku, ki pomaga ohranjati komponente hladne, da se ne pregrejejo. Sestavljen je iz kovinskega dela, ki odvaja toploto, in ventilatorja, 
+			ki piha zrak, da ohlaja procesor. Hlajenje je pomembno, da računalnik deluje pravilno in ne pregori.</p>
+			
+			<h4 id="8">OHIŠJE</h4>
+			<img class="foto4" src="slike/case.png" alt="pc case">
+			<p>Ohišje je kot škatla za računalnik. V njej so nameščene vse notranje komponente, kot so matična plošča, procesor, trdi disk in grafična kartica. Ščiti jih pred prahom, 
+			umazanijo in poškodbami ter omogoča povezavo zunanjih naprav, kot so zasloni, miške in tipkovnice. Poleg tega ohišje daje računalniku tudi videz, saj je običajno oblikovano estetsko.</p>
+
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<hr>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">GOR</button>
+
+        <script>
+
+            let mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+			<!--coda javascript privzeta iz w3schools.com-->
+        </script>
+		
+    </section>
+	<p><i>Navedeni podatki so naučeni bili pri predavanjih<i><p>
+    <footer>
+        <p>spletna stran © 2024 by author is licensed under CC BY 4.0. Vse pravice pridržane.</p>
+    </footer>
+	</div>
+</body>
+</html>

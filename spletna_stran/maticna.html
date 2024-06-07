@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="stilprova.css">
+		<title>PC MATCH</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="Kratek opis vsebine">
+		<meta name="keywords" content="Html, Css ...">
+		<meta name="author" content="Perne Kerin">
+	</head>
+	<body>
+		<div class="ozadje">
+		<header>
+			<img class="logo" src="slike/logotip.png" alt="logotip" style="float:right;width:100px;height:auto;">
+			<h1>PC MATCH</h1>
+			<style>
+				/* Inline styles for the button */
+				#myBtn {
+					display: none;
+					position: fixed;
+					bottom: 20px;
+					right: 30px;
+					z-index: 99;
+					font-size: 18px;
+					border: none;
+					outline: none;
+					background-color: #1F65B5;
+					color: white;
+					cursor: pointer;
+					padding: 15px;
+					border-radius: 10px;
+					transition: background-color 0.3s;
+				}
+				#myBtn:hover {
+					background-color: #02074F;
+					<!--coda javascript privzeta iz w3schools.com-->
+				}
+			</style>
+		</header>
+
+        <nav>
+        <ul class="nav">
+            <li class="navi">
+                <div class="dropdown">
+                    <button class="dropbtn">HOME</button>
+                    <div class="dropdown-content">
+                        <a href="index.html#1">CPE-CENTRALNA PROCESNA ENOTA</a>
+                        <a href="index.html#2">MATIČNA PLOŠČA</a>
+                        <a href="index.html#3">RAM</a>
+                        <a href="index.html#4">GRAFIČNA KARTICA</a>
+                        <a href="index.html#5">POWER SUPPLY/NAPAJALNIK</a>
+                        <a href="index.html#6">SSD ALI HARD DISK/TRDI DISK</a>
+						<a href="index.html#7">HLADILNI VENTILATOR-COOLER</a>
+                        <a href="index.html#8">OHIŠJE</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navi"><a class="page" href="CPU.html">CPE</a></li>
+            <li class="navi"><a class="page" href="maticna.html">MATIČNA PLOŠČA</a></li>
+            <li class="navi"><a class="page" href="graficna.html">GRAFIČNA KARTICA</a></li>
+            <li class="navi">
+                <div class="dropdown">
+                    <button class="dropbtn">NAVODILA</button>
+                    <div class="dropdown-content">
+                        <a href="navodila.html#11">PRVI KORAK</a>
+                        <a href="navodila.html#22">DRUGI KORAK</a>
+                        <a href="navodila.html#33">TRETJI KORAK</a>
+                        <a href="navodila.html#44">ČETRTI KORAK</a>
+                        <a href="navodila.html#55">PETI KORAK</a>
+                        <a href="navodila.html#66">ŠESTI KORAK</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navi"><a class="page" href="nasveti.html">NASVETI IN PRIMERI</a></li>
+        </ul>
+    </nav>
+		<section>
+			<h3>MATIČNA PLOŠČA</h3>
+			<p>Matična plošča je treba preveriti njene tehnične lastnosti, da bi lahko pritrdili ostale dele.</p>
+			<h4>TEHNIČNE LASTNOSTI</h4>
+			<img class="maticna" src="slike/maticna.jpg" alt="matična plošča © 2024 by Perne Kerin is licensed under Creative Commons Attribution 4.0 International" >
+			<ol type="1">
+				<li class="li">Socket-podnožje:</li>
+				<p>Pomembno je preveriti, da je kompoatibilno s ta pravim procesorjem.<br>
+				   Opis: vtičnica na katero pritrdimo CPE.<br>
+				   Primer: AM4, AM5 (za AMD Ryzen), LGA 1200, LGA 1700 (Intel).</p>
+				<li class="li">Chipset-vezje:</li>
+				<p>Opis: Nabor čipov določa funkcije in zmogljivosti matične plošče, vključno s podporo za CPE, RAM...Ima tudi funkcijo overclockinga premočnih procesorjev ali RAM-a.</p>
+
+				<li class="li">MODEL</li>
+				<p>Opis: Velikost in oblika matične plošče.<br>
+				Primer: ATX, Micro-ATX, Mini-ITX<br>
+				Najpomembnejše je preveriti če imamo ohišje prave velikosti.</p>
+
+				<li class="li">Podpora za RAM</li>
+				<p>Opis: Preveriti moramo število rež oz. koliko RAM-ov lahko imamo na eni matično plošči. <br>Pomembno je seveda maksimalna hitrost frekvence RAM-a in seveda vrsto RAM-a.<br>
+				Primer: DDR4, DDR5 (hitrost: 3200, 4800, 5600 MHz).</p>
+
+				<li class="li">Grafična kartica</li>
+				<p>Opis: je zelo pomembno preveriti, da imamo prave reže s ta pravo hitrostjo prikazovanja videa.<br>
+				Primer:  PCIe (4.0/3.0, hitrost prenosa podatkov); x16, x8, x4, x1 (število rež).</p>
+
+				<li class="li">Spomin</li>
+				<p>Opis: SSD in HDD povečemo na SATA povezave.</p>
+
+				<li class="li">Povezljivost- V/I vrata</li>
+				<p>Opis: Pomembno je seveda tudi preveriti koliko USB priključkov imamo, kateri ti Etherneta imamo ( 1Gbps, 2.5 Gbps), Wi-Fi, audio priključek, HDMI...</p>
+
+				<li class="li">Funkcjonalnost</li>
+				<p>Overclocking: blokada močnejših CPE-jov in RAM-a<br>
+				BIOS/UEFI: osvežitvena kapaciteta<br>
+				Cooling priključki: dodatni priključki za ventilatorje</p>
+
+
+			
+		</section>
+		<button onclick="topFunction()" id="myBtn" title="Go to top">GOR</button>
+
+        <script>
+       
+            let mybutton = document.getElementById("myBtn");
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+
+ 
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+			<!--coda javascript privzeta iz w3schools.com-->
+        </script>
+	<footer>
+        <p>spletna stran © 2024 by author is licensed under CC BY 4.0. Vse pravice pridržane.</p>
+    </footer>
+	</div>
+</body>
+</html>
+	
